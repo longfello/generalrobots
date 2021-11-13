@@ -13,8 +13,8 @@ document.write(`
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <!--<a class="nav-link active" aria-current="page" href="#">Mission</a>-->
-        <a class="nav-link" href="/mission">Timeline</a>
-        <a class="nav-link" href="/products">Product</a>
+        <a class="nav-link" href="/product">Product</a>
+        <a class="nav-link" href="/timeline">Timeline</a>
         <a class="nav-link" href="/careers">Careers</a>
         <a class="nav-link" href="/support">Support</a>
       </div>

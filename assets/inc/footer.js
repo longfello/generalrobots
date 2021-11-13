@@ -1,6 +1,6 @@
 document.write(`
 
-<footer class="bd-footer py-5 mt-5 bg-light border-top">
+<footer class="bd-footer py-5 mt-4 bg-light border-top">
   <div class="container py-5">
     <div class="row">
       <div class="col-lg-3 mb-3">
