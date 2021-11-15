@@ -1,50 +1,38 @@
 document.write(`
 
-<footer class="bd-footer py-5 mt-4 bg-light border-top">
-  <div class="container py-5">
+<footer class="bd-footer py-4 mt-4 bg-light border-top">
+  <div class="container py-4">
     <div class="row">
-      <div class="col-lg-3 mb-3">
-        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
-          <img src="./favicons/favicon-32x32.png" width="24" height="24" class="d-block me-2">
-          <span class="fs-5">General Robots</span>
-        </a>
-        <ul class="list-unstyled small text-muted">
-          <li class="mb-2">Humans should create,<br>and all boring hard work will be done by robots.</li>
-          <li class="mb-2">Website v5.0.2.</li>
-        </ul>
+      
+      <div class="col-lg-2 mb-3">
+        <h5 class="mb-1 mt-1">General Robots</h5>
+        <p class="small">Website v5.0.2.</p>
       </div>
-      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-        <h5>About us</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="/">Home</a></li>
-          <li class="mb-2"><a href="#">Docs</a></li>
-          <li class="mb-2"><a href="#">Examples</a></li>
-        </ul>
+      
+      <div class="col-6 col-lg-2 mb-3 me-3">
+        <small>Humans should create,<br>and all boring hard work<br> will be done by robots.</small>
       </div>
+      
+      <div class="col-6 col-lg-3 mb-3 me-5">
+        <h5>Newsletter</h5>
+        <div class="input-group mb-3">
+  				<input type="text" class="form-control" placeholder="E-mail address" aria-label="E-mail address" aria-describedby="button-addon2">
+  				<button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+				</div>
+      </div>
+      
       <div class="col-6 col-lg-2 mb-3">
-        <h5>Product</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="#">Getting started</a></li>
-          <li class="mb-2"><a href="#">Starter template</a></li>
-          <li class="mb-2"><a href="#">Webpack</a></li>
-        </ul>
+        <h5>Keep in touch</h5>
+        <h4>
+    			<a href="#"><i class="bi bi-envelope-fill me-2"></i></a>
+    			<a href="#"><i class="bi bi-facebook me-2"></i></a>
+    			<a href="#"><i class="bi bi-instagram me-2"></i></a>
+    			<a href="#"><i class="bi bi-youtube"></i></a>	
+        </h4>
+        
       </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>Careers</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="#">Bootstrap 5</a></li>
-          <li class="mb-2"><a href="#">Bootstrap 4</a></li>
-          <li class="mb-2"><a href="#s">Icons</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>Support</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="#">Issues</a></li>
-          <li class="mb-2"><a href="#">Discussions</a></li>
-          <li class="mb-2"><a href="#">Corporate sponsors</a></li>
-        </ul>
-      </div>
+
+      
     </div>
   </div>
 </footer>
