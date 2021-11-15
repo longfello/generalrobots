@@ -17,32 +17,32 @@ document.write(`
         <h5>About us</h5>
         <ul class="list-unstyled">
           <li class="mb-2"><a href="/">Home</a></li>
-          <li class="mb-2"><a href="/docs/5.0/">Docs</a></li>
-          <li class="mb-2"><a href="/docs/5.0/examples/">Examples</a></li>
+          <li class="mb-2"><a href="#">Docs</a></li>
+          <li class="mb-2"><a href="#">Examples</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
         <h5>Product</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="/docs/5.0/getting-started/">Getting started</a></li>
-          <li class="mb-2"><a href="/docs/5.0/examples/starter-template/">Starter template</a></li>
-          <li class="mb-2"><a href="/docs/5.0/getting-started/webpack/">Webpack</a></li>
+          <li class="mb-2"><a href="#">Getting started</a></li>
+          <li class="mb-2"><a href="#">Starter template</a></li>
+          <li class="mb-2"><a href="#">Webpack</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
         <h5>Careers</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
+          <li class="mb-2"><a href="#">Bootstrap 5</a></li>
+          <li class="mb-2"><a href="#">Bootstrap 4</a></li>
+          <li class="mb-2"><a href="#s">Icons</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
         <h5>Support</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
-          <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
+          <li class="mb-2"><a href="#">Issues</a></li>
+          <li class="mb-2"><a href="#">Discussions</a></li>
+          <li class="mb-2"><a href="#">Corporate sponsors</a></li>
         </ul>
       </div>
     </div>
