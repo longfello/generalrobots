@@ -9,7 +9,7 @@ document.write(`
         <p class="small">Website v5.0.2.</p>
       </div>
       
-      <div class="col-6 col-lg-2 mb-3 me-3">
+      <div class="col-6 col-lg-3 mb-3 me-3">
         <small>Humans should create,<br>and all boring hard work<br> will be done by robots.</small>
       </div>
       
@@ -21,13 +21,12 @@ document.write(`
 				</div>
       </div>
       
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>Keep in touch</h5>
+      <div class="col-6 col-lg-3 mb-3 me-0 pe-0 text-end">
         <h4>
-    			<a href="#"><i class="bi bi-envelope-fill me-2"></i></a>
-    			<a href="#"><i class="bi bi-facebook me-2"></i></a>
-    			<a href="#"><i class="bi bi-instagram me-2"></i></a>
-    			<a href="#"><i class="bi bi-youtube"></i></a>	
+    			<a href="#" class="link-secondary"><i class="bi bi-envelope-fill me-3"></i></a>
+    			<a href="#" class="link-secondary"><i class="bi bi-facebook me-3"></i></a>
+    			<a href="#" class="link-secondary"><i class="bi bi-instagram me-3"></i></a>
+    			<a href="#" class="link-secondary"><i class="bi bi-youtube"></i></a>	
         </h4>
         
       </div>
