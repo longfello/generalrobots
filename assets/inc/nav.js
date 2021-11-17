@@ -1,3 +1,14 @@
+
+	var url = window.location.href;
+	var pathname = new URL(url).pathname;
+
+	var menu = {
+								"/product":		"Product",
+								"/timeline":	"Timeline",
+								"/careers":		"Careers",
+								"/support":		"Support",
+							}
+	
 document.write(`
 
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom">
@@ -12,16 +23,20 @@ document.write(`
     <div class="d-flex justify-content-center">
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <!--<a class="nav-link active" aria-current="page" href="#">Mission</a>-->
-        <a class="nav-link" href="/product">Product</a>
-        <a class="nav-link" href="/timeline">Timeline</a>
-        <a class="nav-link" href="/careers">Careers</a>
-        <a class="nav-link" href="/support">Support</a>
-      </div>
+
+`);
+
+for (var key in menu) {
+  var option = (key==pathname) ? '<b>'+ menu[key] + '</b>' : menu[key];
+  document.write('<a class="nav-link" href="' + key + '">' + option  + '</a>');
+}
+
+document.write(`
+
+</div>
       </div>
     </div>
   </div>
 </nav>
-</script>
 
 `);
