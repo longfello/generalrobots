@@ -50,5 +50,4 @@ export function footer() {
   footer.className = 'bd-footer py-4 mt-4 bg-light border-top';
 
 	document.body.appendChild(footer);  
-
 }

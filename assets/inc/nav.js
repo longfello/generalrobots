@@ -6,7 +6,6 @@
 								"/product":		"Product",
 								"/timeline":	"Timeline",
 								"/careers":		"Careers",
-								"/support":		"Support",
 							}
 
 /*						
