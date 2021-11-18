@@ -15,10 +15,19 @@ document.write(`
       
       <div class="col-6 col-lg-3 mb-3 me-5">
         <h5>Newsletter</h5>
-        <div class="input-group mb-3">
-  				<input type="text" class="form-control" placeholder="E-mail address" aria-label="E-mail address" aria-describedby="button-addon2">
-  				<button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+        
+        <div id="mc_embed_signup">
+        
+        	<form action="https://generalrobots.us20.list-manage.com/subscribe/post?u=9891a30f49d07bd8ef85c063f&amp;id=af460b11ad" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    				<div class="input-group mb-3" id="mc_embed_signup_scroll">
+							<input type="email" name="EMAIL" id="mce-EMAIL" value="" class="form-control" placeholder="E-mail address" aria-label="E-mail address" aria-describedby="button-addon2" required>
+							<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-outline-secondary">Subscribe</button>
+     				</div>
+     				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9891a30f49d07bd8ef85c063f_af460b11ad" tabindex="-1" value=""></div>
+					</form>
+  				
 				</div>
+				
       </div>
       
       <div class="col-6 col-lg-3 mb-3 me-0 pe-0 text-end">
