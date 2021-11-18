@@ -1,7 +1,10 @@
-document.write(`
+export function footer() {
 
-<footer class="bd-footer py-4 mt-4 bg-light border-top">
-  <div class="container py-4">
+	var footerHTML = "";
+	var footer = document.createElement('footer');
+	
+  footer.innerHTML = `
+<div class="container py-4">
     <div class="row">
       
       <div class="col-lg-2 mb-3">
@@ -43,6 +46,9 @@ document.write(`
       
     </div>
   </div>
-</footer>
+`;
+  footer.className = 'bd-footer py-4 mt-4 bg-light border-top';
 
-`);
+	document.body.appendChild(footer);  
+
+}
