@@ -37,8 +37,8 @@ export function footer() {
         <h4>
     			<a href="mailto:smarty@generalrobots.org?subject=From Website"" class="link-secondary"><i class="bi bi-envelope-fill me-3"></i></a>
     			<a href="https://www.facebook.com/groups/generalrobots" class="link-secondary" target="_blank"><i class="bi bi-facebook me-3"></i></a>
-    			<a href="#" class="link-secondary"><i class="bi bi-instagram me-3"></i></a>
-    			<a href="#" class="link-secondary"><i class="bi bi-youtube"></i></a>	
+    			<!--<a href="#" class="link-secondary"><i class="bi bi-instagram me-3"></i></a>
+    			<a href="#" class="link-secondary"><i class="bi bi-youtube"></i></a>-->
         </h4>
         
       </div>
