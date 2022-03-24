@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" manifest="cache.appcache">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,45 +7,18 @@
     <link rel="shortcut icon" href="./favicons/favicon.ico" />
 		<link rel="apple-touch-icon" href="./favicons/apple-touch-icon.png"/>
     <link rel="canonical" href="https://generalrobots.org">
-		<title>General Robots</title>
+		<title>General Robots - come to the new reality</title>
 		
     <!-- Bootstrap core CSS -->
 		<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-    <style>
-
-      #consist {
-      	background-image: url('./img/smarty.webp');
-  			background-repeat: no-repeat;
-  			background-size: auto 15vw;
-  			background-position: bottom center;
-  			min-height: 450px;
-  			position:relative;
-  			#border: 1px solid gray;
-      }
-      
-      #consist img {
-      	border: 2px solid #c0c0c0;
-      	border-radius: 50%;
-      	position:absolute;
-      	opacity: 0.3;
-      	width:3.5vw;
-      	height:3.5vw;
-      }
-      
-      #consist img:hover {
-      	opacity: 1.0;
-      }
-      
-      .accordion-button:not(.collapsed) {font-weight:700}
-    </style>
     
     <!-- Custom styles for this template -->
     <link href="styles.css" rel="stylesheet">
 
   </head>
   <body>
+	
     
 <main>
 
@@ -66,130 +39,245 @@
   </div>
 </nav>
 
-  <div class="container col-xxl-8 px-4 py-5">
-  	<div id="accordionOne" class="row g-5 py-4">
-  	
-  		<div class="col-3 ps-0">
-  			<div class="accordion">
-  				<div class="accordion-item">
-    				<h2 class="accordion-header" id="headingAI">
-      				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ai" aria-expanded="false" aria-controls="ai">
-        			Artificial Intelligence
-      				</button>
-    				</h2>
-    				<div id="ai" class="accordion-collapse collapse" aria-labelledby="headingAI" data-bs-parent="#accordionOne">
-      				<div class="accordion-body">
-        				The neural network is trained to recognize different types of garbage: plastic bottles, aluminum cans, paper, and others. The accuracy of recognition is over 90%.
-        			</div>
-    				</div>
-  				</div>
-  				<div class="accordion-item">
-    				<h2 class="accordion-header" id="headingMotherBoard">
-      				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MotherBoard" aria-expanded="false" aria-controls="MotherBoard">
-        			Computer
-      				</button>
-    				</h2>
-    				<div id="MotherBoard" class="accordion-collapse collapse" aria-labelledby="headingMotherBoard" data-bs-parent="#accordionOne">
-      				<div class="accordion-body">
-        				The robot has on board a modern Computer controlled by the Unix-type operating system. The Computer provides the work of Artificial Intelligence, as well as gives orders to the Microcontroller to implement a given motion program.
-      				</div>
-    				</div>
-  				</div>
-  				<div class="accordion-item">
-   					<h2 class="accordion-header" id="headingMicroController">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MicroController" aria-expanded="false" aria-controls="MicroController">
-        				MicroController
-      				</button>
-    				</h2>
-    				<div id="MicroController" class="accordion-collapse collapse" aria-labelledby="headingMicroController" data-bs-parent="#accordionOne">
-      				<div class="accordion-body">
-        				The Microcontroller operates the motor functions of the robot, receiving orders from the Computer in the form of preset microprograms: to go there, take trash, turn around, and so on.
-      				</div>
-    				</div>
-  				</div>
+<!--<div class="container" style="min-height:70vh; padding-top:6vh">
+	<div class="row">
+		<!--<div class="col-3">
+			<div class="row">
+				<div class="col-12">
+					<img src="/img/product.main.webp" class="rounded w-100 mb-3">
 				</div>
-  		</div>
-  		
-  		<div id="consist" class="col-6 p-0">
-  			<div class="ms-4">
-  				<h1>Product</h1>
-  				<p class="lead">Robot that collects garbage</p>
-  			</div>
-  			<a data-bs-toggle="collapse" href="#" data-bs-target="#ai" aria-expanded="false" aria-controls="ai">
-  				<img src="./img/icons/ai.png" style="bottom:10vh;left:1.7vw;" alt="Artificial Intelligence" width="75" height="75" loading="lazy">
-  			</a>
-  			<a data-bs-toggle="collapse" href="#" data-bs-target="#MotherBoard" aria-expanded="false" aria-controls="MotherBoard">
-  				<img src="./img/icons/motherboard.png" style="bottom:24.5vh;left:5vw;;" alt="MicroController" width="75" height="75" loading="lazy">
-  			</a>
-  			<a data-bs-toggle="collapse" href="#" data-bs-target="#MicroController" aria-expanded="false" aria-controls="MicroController">
-  				<img src="./img/icons/microcontroller.png" style="bottom:26vh;left:12vw;" alt="MotherBoard" width="75" height="75" loading="lazy">
-  			</a>
-  	
-  	
-  			<a data-bs-toggle="collapse" href="#" data-bs-target="#Camera" aria-expanded="false" aria-controls="Camera">
-  				<img src="./img/icons/camera.png" style="bottom:34vh;right:8vw;" alt="Battery" width="75" height="75" loading="lazy">
-  			</a>
-  			
-  			<a data-bs-toggle="collapse" href="#" data-bs-target="#Routing" aria-expanded="false" aria-controls="Routing">
-  				<img src="./img/icons/routing.png" style="bottom:23vh;right:3vw;" alt="Artificial Intelligence" width="75" height="75" loading="lazy">
-  			</a>
-  			<a data-bs-toggle="collapse" href="#" data-bs-target="#Battery" aria-expanded="false" aria-controls="Battery">
-  				<img src="./img/icons/battery.png" style="bottom:6vh;right:4vw;" alt="Camera" width="75" height="75" loading="lazy">
-  			</a>
-  			
-  			
-  		</div>	
-  		
-  		<div class="col-3 pe-0">
-
-  			<div class="accordion">
-  				<div class="accordion-item">
-    				<h2 class="accordion-header" id="headingCamera">
-      				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Camera" aria-expanded="false" aria-controls="camera">
-        			Camera
-      				</button>
-    				</h2>
-    				<div id="Camera" class="accordion-collapse collapse" aria-labelledby="headingCamera" data-bs-parent="#accordionOne">
-      				<div class="accordion-body">
-        				The camcorder receives a dynamic image, monitors the situation around, photographs the image of the garbage for its subsequent recognition.
-      				</div>
-    				</div>
-  				</div>
-  				<div class="accordion-item">
-    				<h2 class="accordion-header" id="headingRouting">
-      				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Routing" aria-expanded="false" aria-controls="Routing">
-        			Routing
-      				</button>
-    				</h2>
-    				<div id="Routing" class="accordion-collapse collapse" aria-labelledby="headingRouting" data-bs-parent="#accordionOne">
-      				<div class="accordion-body">
-        				The robot collects garbage along a given route, specifying its location using Wi-Fi tracking networks. This enables the robot to determine its position to within half an inch.
-      				</div>
-    				</div>
-  				</div>
-  				<div class="accordion-item">
-   					<h2 class="accordion-header" id="headingBattery">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Battery" aria-expanded="false" aria-controls="Battery">
-        				Battery
-      				</button>
-    				</h2>
-    				<div id="Battery" class="accordion-collapse collapse" aria-labelledby="headingBattery" data-bs-parent="#accordionOne">
-      				<div class="accordion-body">
-        				The rechargeable battery gives the robot the ability to work all day on a single charge without polluting the environment.
-      				</div>
-    				</div>
-  				</div>
+				<div class="col-6 pe-2">
+					<img src="/img/product.electonics.webp" class="rounded w-100">
 				</div>
-
-  		</div>
+				<div class="col-6 ps-2">
+					<img src="/img/product.blade.webp" class="rounded w-100">
+				</div>
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="tab-content" id="jobs-description">
+				<div class="tab-pane fade active show" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-tab-1">
+    					<h1 class="lh-1 mb-3">Product</h1>
+    					<p>Humans should create, and all 4D jobs will be done by robots.</p>
+    					<img src="/img/product.main.webp" class="rounded w-100 mb-3">
+				</div>
+				<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-tab-2">
+    					<h1 class="lh-1 mb-3">What problems do we solve</h1>
+    					<p class="card-text mb-2"><i class="bi bi-exclamation-diamond-fill text-secondary me-2"></i>Over the past 30 years, the desire of workers to engage in unskilled manual labor has been declining in the United States. Finding a blue collar is getting harder and harder.</p>
+    					<p class="card-text mb-2"><i class="bi bi-exclamation-diamond-fill text-secondary me-2"></i>People are irrational, and this creates a lot of problems. Delays, violation of instructions, conflicts, racial prejudice, theft. People get sick, are carriers of infections.</p>
+				</div>
+				<div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-tab-3">
+    			<h1 class="lh-1 mb-3">Solution is Avatar</h1>
+    			<p class="mb-4">An anthropomorphic robot that operated by a remote operator who can communicate and do physical work remotely.</p>
+    			<div class="row">
+    				<div class="col-3"><img src="/img/venn.png" class="img-fluid"></div>
+    				<div class="col-3">
+    					<div class="card small">
+    						<div class="yt">
+    							<img src="https://kashirin.net/img/digit.webp" class="card-img-top" alt="...">
+    						</div>
+    						<div class="card-body">
+    							<h5 class="card-title"><span class="badge bg-secondary-a me-2">A</span>Robot</h5>
+    							<p class="card-text">
+    								<a href="https://www.agilityrobotics.com/robots#digit">Digit</a> has nimble limbs and a torso packed with sensors
+    							</p>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="col-3">
+    					<div class="card small">
+    						<div class="yt">
+    							<img src="https://kashirin.net/img/esper.1.webp" class="card-img-top" alt="...">
+    						</div>
+    						<div class="card-body">
+    							<h5 class="card-title"><span class="badge bg-secondary-b me-2">B</span>Arms</h5>
+    							<p class="card-text">
+    								<a href="https://esperbionics.com/#product" target="_blank">Robotic prosthesis</a> makes it possible to do fine, skilled work.
+    							</p>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="col-3">
+    					<div class="card small">
+    						<div class="yt">
+    							<img src="/img/operator.webp" class="card-img-top" alt="...">
+    						</div>
+    						<div class="card-body">
+    							<h5 class="card-title"><span class="badge bg-secondary-c me-2">C</span>Operator</h5>
+    							<p class="card-text">
+    								Operator <a href="https://spectrum.ieee.org/biomimetic-anthropomorphic-robot-hand" target="_blank">controls Avatar remotely</a> via the Internet.
+    							</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+				</div>
+				<div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-tab-4">
+					<h1 class="lh-1 mb-3">Market Opportunity</h1>
+					<div class="row">
+						<div class="col-6">
+    					<h5 class="card-title">Total Addressable Market (TAM)</h5>
+    					<p class="card-text">What is the total global opportunity for this product? The sky’s the limit.</p>
+    					<h5 class="card-title">Serviceable Addressable Market (SAM)</h5>
+    					<p class="card-text">What is the TAM that you can actually serve?</p>
+    					<h5 class="card-title">Target Market</h5>
+    					<p class="card-text">Describe who you’ll market to, and the people who will buy what you’re selling.</p>
+    					<h5 class="card-title">Market Share</h5>
+    					<p class="card-text">Estimate your market share with a percentage or in dollars.</p>
+						</div>
+						<div class="col"><img src="/img/pye.png" class="img-fluid" alt="..."></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="row">
+				<div class="col-4">
+    					<div class="card small">
+    						<div class="yt">
+    							<img src="https://kashirin.net/img/digit.webp" class="card-img-top" alt="...">
+    						</div>
+    						<div class="card-body">
+    							<h5 class="card-title">Robot</h5>
+    							<p class="card-text">
+    								<a href="https://www.agilityrobotics.com/robots#digit">Digit</a> has nimble limbs and a torso packed with sensors
+    							</p>
+    						</div>
+    					</div>
+    				</div>
+				<div class="col-4">
+    					<div class="card small">
+    						<div class="yt">
+    							<img src="https://kashirin.net/img/esper.1.webp" class="card-img-top" alt="...">
+    						</div>
+    						<div class="card-body">
+    							<h5 class="card-title">Arms</h5>
+    							<p class="card-text">
+    								<a href="https://esperbionics.com/#product" target="_blank">Robotic prosthesis</a> makes it possible to do fine, skilled work.
+    							</p>
+    						</div>
+    					</div>
+    				</div>
+				<div class="col-4">
+    					<div class="card small">
+    						<div class="yt">
+    							<img src="/img/operator.webp" class="card-img-top" alt="...">
+    						</div>
+    						<div class="card-body">
+    							<h5 class="card-title">Operator</h5>
+    							<p class="card-text">
+    								Operator <a href="https://spectrum.ieee.org/biomimetic-anthropomorphic-robot-hand" target="_blank">controls Avatar remotely</a> via the Internet.
+    							</p>
+    						</div>
+    					</div>
+    				</div>
+			</div>
+		</div>
   </div>
+</div>-->
+
+<div class="container col-xxl-8">
+	  <div class="row g-5 py-5">
+
+	<div class="col-10 col-sm-8 col-lg-6">
+			<div class="row">
+			<h1 class="display-5 fw-bold lh-1 mb-3">Robotic Lawn Mower</h1>
+		<p class="lead mb-3">
+		Look at the prototype which mowing the grass. 
+		It runs much quieter than traditional petrol lawn mowers.
+		And best of all - you don't have to buy it! Take it for free and pay only for cutting the grass.
+		</p>
+		<div class="mt-2">
+				<iframe width="100%" height="340" src="https://www.youtube.com/embed/CF_nDD7sHIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+			</div>
+	</div>
     
+	<div class="col-lg-6">
+		
+  
+  
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+
+  <div class="col">
+		<div class="card small h-100">
+			<img src="/img/pay.1.webp" class="card-img-top" alt="Mobile App">
+			<div class="card-body">
+				<h6 class="card-title">Pay<br> as you go</h6>
+				<p class="card-text">
+					Pay only for mowing per acre. The mower is free!
+				</p>
+			</div>
+		</div>
   </div>
+  
+  <div class="col">
+		<div class="card small h-100">
+			<img src="/img/mobApp.1.webp" class="card-img-top" alt="Mobile App">
+			<div class="card-body">
+				<h6 class="card-title">Mobile<br>App</h6>
+				<p class="card-text">
+					Full control of your mower from smartphone.
+				</p>
+			</div>
+		</div>
+  </div>
+  
+  <div class="col">
+    <div class="card small h-100">
+      <img src="/img/lawn.1.webp" class="card-img-top" alt="Full Automatic">
+      <div class="card-body">
+        <h6 class="card-title">Full Automatic</h6>
+        <p class="card-text">No need to mark the site, to charge or carry it.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card small h-100">
+      <img src="/img/ai.1.webp" class="card-img-top" alt="Artificial Intelligence">
+      <div class="card-body">
+        <h6 class="card-title">Artificial Intelligence</h6>
+        <p class="card-text">Find the lawn boundaries, monitors safety.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card small h-100">
+      <img src="/img/charger.1.webp" class="card-img-top" alt="Automatic charging">
+      <div class="card-body">
+        <h6 class="card-title">Self-Charging</h6>
+        <p class="card-text">The lawn mower charges itself as needed.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card small h-100">
+      <img src="/img/eco-friendly.1.webp" class="card-img-top" alt="Eco-Friendly">
+      <div class="card-body">
+        <h6 class="card-title">Eco-<br>Friendly</h6>
+        <p class="card-text">It's electrically powered, no harmful emissions.</p>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+  
+  </div>
+  
+  
+  </div>
+  
+    			
+
+</div>
 
 </main>
 
-
-    <script type="module" src="./assets/inc/loader.js"></script>
+		<script type="module" src="./assets/inc/loader.js"></script>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
   </body>

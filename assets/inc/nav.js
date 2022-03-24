@@ -4,8 +4,8 @@
 
 	var menu = {
 								"/product":		"Product",
-								"/prototype": "Prototype",
-								"/timeline":	"Timeline",
+								"/pitch":	"Pitch",
+								/* "/traction": "Traction", */
 							}
 
 /*						

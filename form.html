@@ -17,8 +17,7 @@
     <link href="styles.css" rel="stylesheet">
 
   </head>
-  <body>
-	
+  <body>	
     
 <main>
 
@@ -39,22 +38,77 @@
   </div>
 </nav>
 
-  <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-			<div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3">Page Not Found</h1>
-        <p class="lead">Try to hit the top menu links.</p>
-      </div>
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="./img/404.gif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="450" height="450" loading="lazy">
-      </div>
+<div class="row">
+	<div class="container col-4" style="min-height:70vh; padding-top:12vh">
+		<div class="row align-items-center">
+		<form id="form">
+			<h1 class="display-5 fw-bold lh-1 mb-3">Стрижка газона</h1>
+			<p>Опрос потребителей</p>
+			<h3>Любите ли вы стричь газон?</h3>
+			<p>
+				<div class="row">
+					<div class="col">
+						<div class="row justify-content-between">
+    					<div class="col-3"><b>Нет</b>, лучше бы он сам себя стриг</div>
+    					<div class="col-3 text-end"><b>Да</b>, обожаю стричь газон</div>
+  					</div>
+						<input name="pleasure" type="range" class="form-range" min="0" max="10" step="1" value="5" id="pleasure">
+					</div>
+				</div>
+			</p>
+		</form>
+			
     </div>
-  </div>
+	</div>
+</div>
 
 </main>
 
 		<script type="module" src="./assets/inc/loader.js"></script>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
+<script>
+
+function sendDB(data,dataKey,refresh,redirect,successFunction) {
+	
+	$.post("https://form.generalrobots.org/?code="+dataKey, data, function( returnData ) {
+		
+		if (returnData.OK) {
+		
+			if (successFunction) {
+				
+				delete returnData.OK;
+				successFunction(returnData);
+			}
+			
+			if (refresh===true) location.reload();
+			else if (redirect) window.location.href = redirect;
+		}
+		
+	}, "json");
+}
+
+function collectData(id) {
+
+	var data = {};
+	var form = $("#"+id).serializeArray();
+	for (var i = 0; i < form.length; i++) {
+    data[form[i]["name"]] = form[i]["value"];
+	}
+	console.log(data);
+	return data;
+}
+
+$(function () { 
+  $("#form input").change( function() { 
+  	data = collectData("form");
+  	sendDB(data,"saveFormData"); 
+  });
+} );
+
+</script>
 
   </body>
 </html>
